@@ -47,4 +47,4 @@ The GitHub Actions workflow expects:
 - Secret: `SONAR_TOKEN`
 - Variables: `SONAR_ORG`, `SONAR_PROJECT_KEY`
 
-See the Student Lab PDF for step-by-step setup instructions.
+See the Student Lab PDF for step-by-step setup instructions
