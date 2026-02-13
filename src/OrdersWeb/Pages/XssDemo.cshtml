@@ -1,0 +1,14 @@
+@page
+@model OrdersWeb.Pages.XssDemoModel
+@{
+    ViewData["Title"] = "XSS Demo";
+}
+
+<h1>XSS Demo</h1>
+
+<p>Query string: <code>?q=...</code></p>
+
+<!-- VULNERABLE: Html.Raw disables encoding -->
+<div>
+    You searched for: @Html.Raw(Model.Q)
+</div>

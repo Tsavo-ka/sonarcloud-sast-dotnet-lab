@@ -1,0 +1,15 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<h1>OrdersWeb - SonarCloud SAST Lab</h1>
+
+<ul>
+    <li><a href="/XssDemo?q=%3Cscript%3Ealert(1)%3C%2Fscript%3E">XSS demo</a></li>
+    <li><a href="/api/orders/search?customer=alice">SQL injection demo endpoint</a></li>
+    <li><a href="/api/files/read?name=hello.txt">Path traversal demo endpoint</a></li>
+</ul>
+
+<p><strong>Warning:</strong> This application is intentionally insecure for training. Do not deploy.</p>
